@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "onClick");
-
+                Toast.makeText(v.getContext(), "click", Toast.LENGTH_SHORT).show();
             }
         });
     }
